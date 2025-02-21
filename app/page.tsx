@@ -84,37 +84,40 @@ export default function Home() {
       <section className="container mx-auto">
         <h3 className="text-4xl font-extrabold mb-10">Mes expériences</h3>
         <Separator className="h-[2px] rounded-lg" />
-
-        {experiences.map((experience, index) => (
-          <>
-            <div key={index} className="grid grid-cols-4 py-12">
-              <span className="text-gray-400">{experience.date}</span>
-              <div className="col-span-3">
-                <h4 className="text-2xl font-bold mb-3">{experience.title}</h4>
-                <div className="flex space-x-3">
-                  {experience.tags.map((tag, index) => (
-                    <span key={index} className="text-custom-primary text">
-                      {tag}
-                    </span>
-                  ))}
+        <div className="w-4/6 mx-auto">
+          {experiences.map((experience, index) => (
+            <>
+              <div key={index} className="grid grid-cols-4 py-12">
+                <span className="dark:text-gray-400">{experience.date}</span>
+                <div className="col-span-3">
+                  <h4 className="text-2xl font-bold mb-3">
+                    {experience.title}
+                  </h4>
+                  <div className="flex space-x-3">
+                    {experience.tags.map((tag, index) => (
+                      <span key={index} className="text-custom-primary text">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="mt-3 dark:text-gray-400 prose prose-gray dark:prose-invert max-w-none dark:prose-headings:text-gray-300 prose-h2:text-lg">
+                    <ReactMarkdown>{experience.description}</ReactMarkdown>
+                  </div>
+                  <a
+                    target="_blank"
+                    href={experience.link}
+                    className="text-custom-primary hover:text-custom-primary-hover flex items-center gap-1 hover:gap-2 ease-in-out transition-all mt-4"
+                  >
+                    En savoir plus <ArrowRight className="size-4" />
+                  </a>
                 </div>
-                <p className="mt-3 text-gray-400 prose prose-invert max-w-none prose-headings:text-gray-300 prose-h2:text-lg">
-                  <ReactMarkdown>{experience.description}</ReactMarkdown>
-                </p>
-                <a
-                  target="_blank"
-                  href={experience.link}
-                  className="text-custom-primary hover:text-custom-primary-hover flex items-center gap-1 hover:gap-2 ease-in-out transition-all mt-4"
-                >
-                  En savoir plus <ArrowRight className="size-4" />
-                </a>
               </div>
-            </div>
-            {index !== experiences.length - 1 && (
-              <Separator className="h-[1px]" />
-            )}
-          </>
-        ))}
+              {index !== experiences.length - 1 && (
+                <Separator className="h-[1px]" />
+              )}
+            </>
+          ))}
+        </div>
       </section>
     </>
   );
