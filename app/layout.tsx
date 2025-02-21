@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { Space_Grotesk } from "next/font/google";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,6 +14,15 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+// Définition de la police
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  // Vous pouvez ajouter d'autres options comme :
+  // weight: ['400', '700'],
+  // display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -25,11 +36,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
+    >
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
           {children}
           <Footer />
         </ThemeProvider>

@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk), Arial, sans-serif;
 }
 
 @layer base {
@@ -33,6 +33,10 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
+
+    --custom-primary: #00f6ed;
+    --custom-primary-hover: #00e6d8;
+    --custom-text-muted: ##9ca3af;
   }
   .dark {
     --background: 0 0% 3.9%;
@@ -59,6 +63,10 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+
+    --custom-primary: #00f6ed;
+    --custom-primary-hover: #01a196;
+    --custom-text-muted: #d1d5db;
   }
 }
 
