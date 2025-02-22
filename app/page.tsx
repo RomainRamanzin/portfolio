@@ -104,7 +104,9 @@ export default function Home() {
           {experiences.map((experience, index) => (
             <>
               <div key={index} className="grid grid-cols-4 py-12">
-                <span className="dark:text-gray-400">{experience.date}</span>
+                <span className="text-gray-500 dark:text-gray-400">
+                  {experience.date}
+                </span>
                 <div className="col-span-3">
                   <div className="flex items-center gap-6">
                     <div className="size-[50px] bg-white rounded-full flex items-center justify-center shadow-lg">
@@ -131,7 +133,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="mt-3 dark:text-gray-400 prose prose-gray dark:prose-invert max-w-none dark:prose-headings:text-gray-300 prose-h2:text-lg">
+                  <div className="mt-3 text-gray-500 dark:text-gray-400 prose prose-gray dark:prose-invert max-w-none dark:prose-headings:text-gray-300 prose-h2:text-lg">
                     <ReactMarkdown>{experience.description}</ReactMarkdown>
                   </div>
                   <a

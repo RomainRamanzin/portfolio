@@ -8,14 +8,47 @@ import { Sun } from "lucide-react";
 function Header() {
   const { setTheme, theme } = useTheme();
   return (
-    <>
-      <Button
-        variant={"ghost"}
-        onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-      >
-        <Sun />
-      </Button>
-    </>
+    <header className="p-8">
+      <div className="flex justify-between w-4/6 mx-auto">
+        <div className="flex items-center gap-16">
+          <h1 className="text-2xl font-bold text-custom-primary">
+            {"{Romain Ramanzin}"}
+          </h1>
+          <ul className="flex gap-8">
+            <li>
+              <a
+                className="hover:underline hover:text-custom-muted p-2 font-medium"
+                href="#about"
+              >
+                À propos
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline hover:text-custom-muted p-2 font-medium"
+                href="#projects"
+              >
+                Projets
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline hover:text-custom-muted p-2 font-medium"
+                href="#contact"
+              >
+                Expériences
+              </a>
+            </li>
+          </ul>
+        </div>
+        <Button
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          variant="ghost"
+        >
+          <Sun size={16} />
+        </Button>
+      </div>
+    </header>
   );
 }
 

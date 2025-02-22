@@ -34,9 +34,9 @@ body {
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
 
-    --custom-primary: #00f6ed;
-    --custom-primary-hover: #00e6d8;
-    --custom-text-muted: ##9ca3af;
+    --custom-primary: #007ff6;
+    --custom-primary-hover: #004b91;
+    --custom-text-muted: #9ca3af;
   }
   .dark {
     --background: 0 0% 3.9%;
