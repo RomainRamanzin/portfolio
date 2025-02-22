@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
-import { Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 
 function Header() {
   const { setTheme, theme } = useTheme();
@@ -45,7 +45,7 @@ function Header() {
           onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
           variant="ghost"
         >
-          <Sun size={16} />
+          {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
         </Button>
       </div>
     </header>
