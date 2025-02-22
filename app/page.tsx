@@ -1,11 +1,17 @@
 import { Separator } from "@/components/ui/separator";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 
 const experiences = [
   {
     date: "Avril 2023 - Févier 2025",
     title: "Pilow (Madenco) | Développeur Web / Responsable technique",
+    logo: {
+      src: "/logo/pilow-logo.png",
+      alt: "Logo de l'entreprise Pilow",
+      size: { width: 50, height: 50 },
+    },
     description: `En tant que responsable technique, j’ai pris en charge l’ensemble des aspects techniques du site web et de son API, garantissant la stabilité, la scalabilité et l’évolution de la plateforme.
 
 ## Développement & Maintenance
@@ -32,6 +38,11 @@ const experiences = [
   {
     date: "Septembre 2022 - Mars 2023",
     title: "CreaKnow | Développeur Web",
+    logo: {
+      src: "/logo/creaknow.png",
+      alt: "Logo de l'entreprise Creaknow",
+      size: { width: 32, height: 36 },
+    },
     description: `Au sein de Creaknow, j’ai participé à la conception et au développement de projets sous **Symfony**, en intervenant sur différentes phases du cycle de développement.
 
 ## Analyse & Conception
@@ -51,6 +62,11 @@ const experiences = [
   {
     date: "Janvier 2022",
     title: "Les Restos du Cœur | Stage en développement",
+    logo: {
+      src: "/logo/restos_du_coeur.png",
+      alt: "Logo de l'association Les Restos du Cœur",
+      size: { width: 36, height: 36 },
+    },
     description: `Dans le cadre de ce stage, j’ai participé au développement d’une application web en **Symfony** visant à optimiser la gestion du stockage et de la redistribution des denrées alimentaires pour l’association **Les Restos du Cœur**. Ce projet avait pour objectif d’améliorer la **gestion des stocks** en entrepôt et la distribution vers divers centres de collecte.
 
 ## Refonte du Projet
@@ -90,15 +106,30 @@ export default function Home() {
               <div key={index} className="grid grid-cols-4 py-12">
                 <span className="dark:text-gray-400">{experience.date}</span>
                 <div className="col-span-3">
-                  <h4 className="text-2xl font-bold mb-3">
-                    {experience.title}
-                  </h4>
-                  <div className="flex space-x-3">
-                    {experience.tags.map((tag, index) => (
-                      <span key={index} className="text-custom-primary text">
-                        {tag}
-                      </span>
-                    ))}
+                  <div className="flex items-center gap-6">
+                    <div className="size-[50px] bg-white rounded-full flex items-center justify-center shadow-lg">
+                      <Image
+                        src={experience.logo.src}
+                        width={experience.logo.size.width}
+                        height={experience.logo.size.height}
+                        alt={experience.logo.alt}
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-2xl font-bold mb-3">
+                        {experience.title}
+                      </h4>
+                      <div className="flex space-x-3">
+                        {experience.tags.map((tag, index) => (
+                          <span
+                            key={index}
+                            className="text-custom-primary text"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                   <div className="mt-3 dark:text-gray-400 prose prose-gray dark:prose-invert max-w-none dark:prose-headings:text-gray-300 prose-h2:text-lg">
                     <ReactMarkdown>{experience.description}</ReactMarkdown>
