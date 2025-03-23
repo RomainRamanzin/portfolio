@@ -4,6 +4,7 @@ import React from "react";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
+import Link from "next/link";
 
 function Header() {
   const { setTheme, theme } = useTheme();
@@ -11,9 +12,11 @@ function Header() {
     <header className="p-8">
       <div className="flex justify-between w-4/6 mx-auto">
         <div className="flex items-center gap-16">
-          <h1 className="text-2xl font-bold text-custom-primary">
-            {"{Romain Ramanzin}"}
-          </h1>
+          <Link href="/">
+            <h1 className="text-2xl font-bold text-custom-primary">
+              {"{Romain Ramanzin}"}
+            </h1>
+          </Link>
           <ul className="flex gap-8">
             <li>
               <a
@@ -21,6 +24,14 @@ function Header() {
                 href="#about"
               >
                 À propos
+              </a>
+            </li>
+            <li>
+              <a
+                className="hover:underline hover:text-custom-muted p-2 font-medium"
+                href="#competences"
+              >
+                Compétences
               </a>
             </li>
             <li>
@@ -34,7 +45,7 @@ function Header() {
             <li>
               <a
                 className="hover:underline hover:text-custom-muted p-2 font-medium"
-                href="#contact"
+                href="#experience"
               >
                 Expériences
               </a>
