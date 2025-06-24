@@ -1,42 +1,46 @@
 import { Github, Linkedin, Mail } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const links = [
   {
     href: "https://www.linkedin.com/in/romainrr/",
-    icon: <Linkedin />,
+    icon: <Linkedin className="w-5 h-5" />,
   },
   {
     href: "https://github.com/RomainRamanzin",
-    icon: <Github />,
+    icon: <Github className="w-5 h-5" />,
   },
   {
     href: "mailto:romain.ramanzin@gmail.com",
-    icon: <Mail />,
+    icon: <Mail className="w-5 h-5" />,
   },
 ];
 
 function Footer() {
   return (
-    <div className="w-full">
-      <div className="flex flex-col items-center justify-center py-14 space-y-4">
-        <div className="flex space-x-4">
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              target="_blank"
-              className="hover:text-custom-primary size-10 hover:scale-125 transition-all"
-            >
-              {link.icon}
-            </a>
-          ))}
+    <footer className="py-8 px-4 border-t border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm">
+      <div className="max-w-6xl mx-auto text-center">
+        <div className="flex flex-col items-center justify-center">
+          {/* <Logo /> */}
+          <div className="flex items-center gap-6 my-6">
+            {links.map((link, _index) => (
+              <Link
+                key={_index}
+                href={link.href}
+                className="text-slate-600 hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-400 transition-colors"
+                aria-label="LinkedIn"
+              >
+                {link.icon}
+              </Link>
+            ))}
+          </div>
+          <p className="text-slate-600 dark:text-slate-400 text-sm">
+            © {new Date().getFullYear()} Romain Ramanzin. Tous droits réservés.
+          </p>
         </div>
-        <p className="text-gray-500">
-          © {new Date().getFullYear()} Tous droits réservés
-        </p>
       </div>
-    </div>
+    </footer>
   );
 }
 
