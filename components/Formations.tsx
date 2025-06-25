@@ -13,7 +13,16 @@ const education = [
     logo: "/logo/logo-ensitech.png",
     description:
       "Approfondissement des architectures logicielles, des méthodologies DevOps et du développement full-stack web & mobile pour piloter la transformation numérique des organisations.",
-    techno: ["Symfony", "React", "Node.js", "MySQL", "MongoDB"],
+    techno: [
+      "Symfony",
+      "React",
+      "Node.js",
+      "MySQL",
+      "MongoDB",
+      "Docker",
+      "CI/CD",
+      "API REST",
+    ],
   },
   {
     degree: "Concepteur développeur d'applications",
@@ -34,7 +43,15 @@ const education = [
     logo: "/logo/logo-stadjutor.png",
     description:
       "Acquisition des fondamentaux du génie logiciel et des bases de données, réalisation d’applications métiers en équipe selon une démarche projet agile.",
-    techno: ["Symfony", "React", "C#", "MySQL", "Angular", "Ionic"],
+    techno: [
+      "Symfony",
+      "React",
+      "C#",
+      "MySQL",
+      "Bootstrap",
+      "Angular",
+      "Ionic",
+    ],
   },
 ];
 
