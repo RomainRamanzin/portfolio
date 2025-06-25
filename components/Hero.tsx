@@ -48,14 +48,14 @@ function Hero() {
             Spécialisé dans les technologies modernes et l&apos;innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
-            <Button
+            {/* <Button
               size="lg"
               onClick={() => scrollToSection("projects")}
               className="bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white px-6 md:px-8 py-3 rounded-full text-sm md:text-base"
             >
               Voir mes projets
               <ChevronRight className="ml-2 w-4 h-4" />
-            </Button>
+            </Button> */}
             <Button
               variant="outline"
               size="lg"
