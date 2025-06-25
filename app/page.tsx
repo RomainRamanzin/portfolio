@@ -3,7 +3,9 @@ import Competences from "@/components/Competences";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
 import Formations from "@/components/Formations";
+import Passions from "@/components/Passions";
 import Projects from "@/components/Projects";
+import Recommandations from "@/components/Recommandations";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Experience />
       <Formations />
       <Certifications />
+      <Recommandations />
+      <Passions />
       <Contact />
     </>
   );
