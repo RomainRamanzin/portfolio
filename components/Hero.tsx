@@ -130,7 +130,7 @@ function Hero() {
           </div>
           <div className="absolute -bottom-2 left-1/4 sm:-bottom-4 sm:left-1/4 bg-white dark:bg-slate-800 rounded-full px-2 py-1 sm:px-4 sm:py-2 shadow-lg border border-slate-100 dark:border-slate-700">
             <Badge className="bg-cyan-100 text-cyan-800 dark:bg-cyan-900/50 dark:text-cyan-300 text-xs sm:text-sm">
-              Next.js
+              Node.js
             </Badge>
           </div>
         </div>
