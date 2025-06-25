@@ -10,7 +10,7 @@ const education = [
     school: "Ensitech",
     period: "2023 - 2025",
     location: "Cergy, France",
-    logo: "/logo/logo-ensitech.png",
+    logo: "./logo/logo-ensitech.png",
     description:
       "Approfondissement des architectures logicielles, des méthodologies DevOps et du développement full-stack web & mobile pour piloter la transformation numérique des organisations.",
     techno: [
@@ -29,7 +29,7 @@ const education = [
     school: "Ensitech",
     period: "2022 - 2023",
     location: "Cergy, France",
-    logo: "/logo/logo-ensitech.png",
+    logo: "./logo/logo-ensitech.png",
     description:
       "Maîtrise du cycle de vie logiciel : analyse des besoins, modélisation, développement (JavaScript/TypeScript, PHP) et déploiement sur des SGBD relationnels et NoSQL.",
     techno: ["Symfony", "React", "Flutter", "Java", "MySQL"],
@@ -40,7 +40,7 @@ const education = [
     school: "Saint Adjutor",
     period: "2020 - 2022",
     location: "Vernon, France",
-    logo: "/logo/logo-stadjutor.png",
+    logo: "./logo/logo-stadjutor.png",
     description:
       "Acquisition des fondamentaux du génie logiciel et des bases de données, réalisation d’applications métiers en équipe selon une démarche projet agile.",
     techno: [

@@ -8,7 +8,7 @@ const certifications = [
     name: "TOEIC - 910/990pts",
     issuer: "ETS Global",
     date: "2025 - 2027",
-    badge: "/logo/global-exam.png",
+    badge: "./logo/global-exam.png",
   },
 ];
 

@@ -6,27 +6,27 @@ const passions = [
   {
     name: "Impression 3d",
     description: "Prototypage & création",
-    img: "/images/imprimante-3d.png",
+    img: "./images/imprimante-3d.png",
   },
   {
     name: "Électronique",
     description: "Circuits & composants",
-    img: "/images/arduino.webp",
+    img: "./images/arduino.webp",
   },
   {
     name: "Robotique",
     description: "Automatisation & IA",
-    img: "/images/robot.jpg",
+    img: "./images/robot.jpg",
   },
   {
     name: "Sim Racing",
     description: "Course virtuelle",
-    img: "/images/simracing.webp",
+    img: "./images/simracing.webp",
   },
   {
     name: "Automobile",
     description: "Circuit & rassemblements",
-    img: "/images/automobile.avif",
+    img: "./images/automobile.avif",
   },
 ];
 

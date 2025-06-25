@@ -9,7 +9,7 @@ const experiences = [
     company: "Pilow (MadenCo) - StartUp",
     period: "2023 - 2025",
     location: "Cergy, France",
-    logo: "/logo/pilow-logo.png",
+    logo: "./logo/pilow-logo.png",
     description:
       "En tant que responsable technique, j’ai pris en charge l’ensemble des aspects techniques du site web et de son API, garantissant la stabilité, la scalabilité et l’évolution de la plateforme.",
     tasks: [
@@ -37,7 +37,7 @@ const experiences = [
     company: "Creaknow - StartUp",
     period: "2022 - 2023",
     location: "Cergy, France",
-    logo: "/logo/creaknow.png",
+    logo: "./logo/creaknow.png",
     description:
       "Au sein de Creaknow, j’ai participé à la conception et au développement de projets web et mobile, en intervenant sur différentes phases du cycle de développement",
     tasks: [
@@ -55,7 +55,7 @@ const experiences = [
     company: "Les Restos du Cœur",
     period: "2022",
     location: "Rouen, France",
-    logo: "/logo/restos_du_coeur.png",
+    logo: "./logo/restos_du_coeur.png",
     description:
       "Participation au développement d’une application web visant à optimiser la gestion du stockage et de la redistribution des denrées alimentaires pour l’association Les Restos du Cœur. Ce projet avait pour objectif d’améliorer la gestion des stocks en entrepôt et la distribution vers divers centres de collecte.",
     tasks: [

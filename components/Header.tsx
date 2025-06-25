@@ -52,7 +52,7 @@ function Header() {
         <Link href="#" className="flex items-center gap-3 flex-shrink-0">
           <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-purple-500/20">
             <Image
-              src="/images/profile-pic.png"
+              src="./images/profile-pic.png"
               alt="Avatar Romain Ramanzin"
               width={32}
               height={32}
@@ -165,71 +165,6 @@ function Header() {
         </div>
       </nav>
     </header>
-    // <header className="fixed top-4 left-4 right-4 md:left-1/2 md:right-auto md:transform md:-translate-x-1/2 z-50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-full px-3 md:px-3 py-3 shadow-lg border border-white/20 dark:border-slate-700/20">
-    //   <nav className="flex items-center justify-between">
-    //     <Image
-    //       src={"/images/profile-pic.png"}
-    //       alt={"Avatar Romain Ramanzin"}
-    //       width={40}
-    //       height={40}
-    //       className={"rounded-full"}
-    //     />
-
-    //     {/* Navigation desktop */}
-    //     <div className="flex items-center gap-6 mx-6">
-    //       <button
-    //         onClick={() => scrollToSection("hero")}
-    //         className={`text-sm font-medium transition-colors hover:text-purple-600 dark:hover:text-purple-400 ${
-    //           activeSection === "hero"
-    //             ? "text-purple-600 dark:text-purple-400"
-    //             : "text-slate-600 dark:text-slate-300"
-    //         }`}
-    //       >
-    //         Accueil
-    //       </button>
-    //       <button
-    //         onClick={() => scrollToSection("projects")}
-    //         className={`text-sm font-medium transition-colors hover:text-purple-600 dark:hover:text-purple-400 ${
-    //           activeSection === "projects"
-    //             ? "text-purple-600 dark:text-purple-400"
-    //             : "text-slate-600 dark:text-slate-300"
-    //         }`}
-    //       >
-    //         Projets
-    //       </button>
-    //       <button
-    //         onClick={() => scrollToSection("experience")}
-    //         className={`text-sm font-medium transition-colors hover:text-purple-600 dark:hover:text-purple-400 ${
-    //           activeSection === "experience"
-    //             ? "text-purple-600 dark:text-purple-400"
-    //             : "text-slate-600 dark:text-slate-300"
-    //         }`}
-    //       >
-    //         Expérience
-    //       </button>
-    //       <button
-    //         onClick={() => scrollToSection("education")}
-    //         className={`text-sm font-medium transition-colors hover:text-purple-600 dark:hover:text-purple-400 ${
-    //           activeSection === "education"
-    //             ? "text-purple-600 dark:text-purple-400"
-    //             : "text-slate-600 dark:text-slate-300"
-    //         }`}
-    //       >
-    //         Formation
-    //       </button>
-    //       <button
-    //         onClick={() => scrollToSection("contact")}
-    //         className={`text-sm font-medium transition-colors hover:text-purple-600 dark:hover:text-purple-400 ${
-    //           activeSection === "contact"
-    //             ? "text-purple-600 dark:text-purple-400"
-    //             : "text-slate-600 dark:text-slate-300"
-    //         }`}
-    //       >
-    //         Contact
-    //       </button>
-    //     </div>
-    //   </nav>
-    // </header>
   );
 }
 

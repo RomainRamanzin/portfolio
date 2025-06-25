@@ -10,7 +10,7 @@ const recommendations = [
     company: "Pilow (MadenCo)",
     content:
       "Romain est un homme polyvalent, fiable et très ingénieux. Il a su porter seul le plus gros projet de développement de la société que j’ai fondée il y a 2 ans. Il est très rigoureux et sait faire preuve d’initiatives. J’espère avoir un jour la chance de retravailler à ses côtés !",
-    avatar: "/images/sandra-bede.jpeg",
+    avatar: "./images/sandra-bede.jpeg",
   },
   {
     name: "Ingrid Darboux",
@@ -18,7 +18,7 @@ const recommendations = [
     company: "Les Restos du Cœur",
     content:
       "Romain a intégré le projet en cours de route. Il a su s'adapter, vite comprendre ce nous avions besoin et être rapidement opérationnel. Il est investit dans ce qu'il fait. Son potentiel ne demande qu'à s'exprimer.",
-    avatar: "/images/ingrid-darboux.jpeg",
+    avatar: "./images/ingrid-darboux.jpeg",
   },
 ];
 
