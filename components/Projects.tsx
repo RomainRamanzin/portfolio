@@ -11,38 +11,18 @@ import { Code, ExternalLink, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
 
 const projects = [
-  // {
-  //   title: "Application E-commerce",
-  //   description:
-  //     "Plateforme de vente en ligne complète avec panier, paiement et gestion des commandes",
-  //   technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-  //   image: "/placeholder.svg?height=200&width=300",
-  //   link: "#",
-  //   github: "#",
-  // },
-  // {
-  //   title: "Dashboard Analytics",
-  //   description:
-  //     "Interface d'analyse de données avec graphiques interactifs et rapports personnalisés",
-  //   technologies: ["Vue.js", "D3.js", "Python", "PostgreSQL"],
-  //   image: "/placeholder.svg?height=200&width=300",
-  //   link: "#",
-  //   github: "#",
-  // },
-  // {
-  //   title: "Application Mobile",
-  //   description:
-  //     "App mobile cross-platform pour la gestion de tâches avec synchronisation cloud",
-  //   technologies: ["React Native", "Firebase", "Redux"],
-  //   image: "/placeholder.svg?height=200&width=300",
-  //   link: "#",
-  //   github: "#",
-  // },
+  {
+    title: "Application E-commerce",
+    description:
+      "Plateforme de vente en ligne complète avec panier, paiement et gestion des commandes",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    image: "/placeholder.svg?height=200&width=300",
+    link: "#",
+    github: "#",
+  },
 ];
 
 function Projects() {
-  if (projects.length === 0) return;
-
   return (
     <section id="projects" className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto relative z-10">

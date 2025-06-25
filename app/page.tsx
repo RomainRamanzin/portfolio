@@ -6,7 +6,6 @@ import Formations from "@/components/Formations";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Passions from "@/components/Passions";
-import Projects from "@/components/Projects";
 import Recommandations from "@/components/Recommandations";
 import { ThemeProvider } from "next-themes";
 
@@ -21,7 +20,8 @@ export default function Home() {
       <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
         <Header />
         <Hero />
-        <Projects />
+        {/* No project to show for the moment */}
+        {/* <Projects /> */}
         <Experience />
         <Formations />
         <Certifications />
