@@ -28,6 +28,7 @@ function Footer() {
               <Link
                 key={_index}
                 href={link.href}
+                target="_blank"
                 className="text-slate-600 hover:text-purple-600 dark:text-slate-400 dark:hover:text-purple-400 transition-colors"
                 aria-label="LinkedIn"
               >
