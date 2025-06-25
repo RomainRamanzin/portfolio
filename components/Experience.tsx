@@ -41,12 +41,11 @@ const experiences = [
     description:
       "Au sein de Creaknow, j’ai participé à la conception et au développement de projets web et mobile, en intervenant sur différentes phases du cycle de développement",
     tasks: [
-      "Recueil des besoins et rédaction des spécifications techniques.",
+      "Analyse des besoins et rédaction des spécifications fonctionnelles.",
       "Mise en place de l’architecture des projets en fonction des exigences métier.",
-      "Intégration d'APIs tierces (Google Maps, Mailchimp, Slack)",
-      "Mise en place de tests automatisés (Jest, Cypress)",
-      "Déploiement sur AWS avec CI/CD (GitHub Actions)",
-      "Gestion de base de données PostgreSQL et Redis",
+      "Conception et développement d’une application web avec Symfony.",
+      "Développement mobile avec Flutter : création d’interfaces dynamiques, gestion de la navigation et des états.",
+      "Capacité à proposer des choix techniques adaptés à un projet à taille réduite.",
     ],
     techno: ["Symfony", "JavaScript", "MySQL", "Flutter", "Figma"],
   },
