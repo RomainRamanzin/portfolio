@@ -19,7 +19,7 @@ const links = [
 
 function Footer() {
   return (
-    <footer className="py-8 px-4 border-t border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm">
+    <footer className="py-8 px-4 border-t border-slate-800 bg-slate-900/80 backdrop-blur-sm">
       <div className="max-w-6xl mx-auto text-center">
         <div className="flex flex-col items-center justify-center">
           {/* <Logo /> */}

@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import { Space_Grotesk } from "next/font/google";
 
 const geistSans = Geist({
@@ -41,10 +39,8 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased scroll-smooth`}
     >
       <body>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <Header />
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
-          <Footer />
         </ThemeProvider>
       </body>
     </html>

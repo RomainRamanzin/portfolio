@@ -1,23 +1,35 @@
 import Certifications from "@/components/Certifications";
-import Competences from "@/components/Competences";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Formations from "@/components/Formations";
+import Header from "@/components/Header";
+import Hero from "@/components/Hero";
 import Passions from "@/components/Passions";
 import Projects from "@/components/Projects";
 import Recommandations from "@/components/Recommandations";
+import { ThemeProvider } from "next-themes";
 
 export default function Home() {
   return (
-    <>
-      <Competences />
-      <Projects />
-      <Experience />
-      <Formations />
-      <Certifications />
-      <Recommandations />
-      <Passions />
-      <Contact />
-    </>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+        <Header />
+        <Hero />
+        <Projects />
+        <Experience />
+        <Formations />
+        <Certifications />
+        <Recommandations />
+        <Passions />
+        <Contact />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
