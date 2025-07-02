@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     images: ["https://romainramanzin.github.io/portfolio/image.png"],
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "./favicon.ico",
   },
 };
 
