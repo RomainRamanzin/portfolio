@@ -6,7 +6,7 @@ import { Badge } from "./ui/badge";
 
 const education = [
   {
-    degree: "Expert en informatique et système d'information",
+    degree: "Master - Expert en informatique et système d'information",
     school: "Ensitech",
     period: "2023 - 2025",
     location: "Cergy, France",
@@ -25,7 +25,7 @@ const education = [
     ],
   },
   {
-    degree: "Concepteur développeur d'applications",
+    degree: "Bachelor - Concepteur développeur d'applications",
     school: "Ensitech",
     period: "2022 - 2023",
     location: "Cergy, France",
