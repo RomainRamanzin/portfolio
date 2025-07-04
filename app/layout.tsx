@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     title: "Romain Ramanzin – Développeur Web Fullstack",
     description:
       "Portfolio de Romain Ramanzin, développeur web fullstack passionné par la création d'applications performantes et modernes.",
-    url: "https://romainramanzin.github.io/portfolio/",
+    url: "https://romainramanzin.fr/",
     siteName: "Portfolio Romain Ramanzin",
     images: [
       {
-        url: "https://romainramanzin.github.io/portfolio/image.png",
+        url: "https://romainramanzin.fr/image.png",
         width: 1200,
         height: 630,
         alt: "Aperçu du portfolio de Romain Ramanzin",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Romain Ramanzin – Développeur Web Fullstack",
     description:
       "Portfolio de Romain Ramanzin, développeur web fullstack passionné par la création d'applications performantes et modernes.",
-    images: ["https://romainramanzin.github.io/portfolio/image.png"],
+    images: ["https://romainramanzin.fr/image.png"],
   },
   icons: {
     icon: "./favicon.ico",
