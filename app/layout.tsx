@@ -78,12 +78,6 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased scroll-smooth`}
     >
-      <head>
-        <meta
-          name="google-site-verification"
-          content="7UBQCIjFtZRmkjfQ0CRI5L1nAY2jDw5KT4ljbzTo_v4"
-        />
-      </head>
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
