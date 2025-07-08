@@ -1,36 +1,172 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Romain Ramanzin
 
-## Getting Started
+![Portfolio Preview](./public/image.png)
 
-First, run the development server:
+Un portfolio moderne et responsive développé avec Next.js, présentant mes compétences, expériences et projets en tant que développeur web fullstack.
+
+## 🌐 Aperçu
+
+**URL en ligne :** [https://romainramanzin.fr](https://romainramanzin.fr)
+
+Ce portfolio présente :
+
+- Mes compétences techniques et projets
+- Mon expérience professionnelle et formation
+- Mes certifications
+- Mes recommandations clients
+- Mes informations de contact
+
+## 🚀 Technologies utilisées
+
+- **Framework :** Next.js 15 (App Router)
+- **Langage :** TypeScript
+- **Styling :** Tailwind CSS
+- **UI Components :** Shadcn/ui
+- **Icônes :** Lucide React
+- **Polices :** Space Grotesk (Google Fonts)
+- **Déploiement :** GitHub Pages
+
+## 📦 Installation
+
+### Prérequis
+
+- Node.js 18+
+- npm, yarn, pnpm ou bun
+
+### Étapes d'installation
+
+1. **Cloner le repository**
+
+```bash
+git clone https://github.com/RomainRamanzin/portfolio.git
+cd portfolio
+```
+
+2. **Installer les dépendances**
+
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+```
+
+3. **Lancer le serveur de développement**
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. **Ouvrir dans le navigateur**
+   Accédez à [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Scripts disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# Développement
+npm run dev
 
-## Learn More
+# Build de production
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Lancement en mode production
+npm run start
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Vérification du code (ESLint)
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Structure du projet
 
-## Deploy on Vercel
+```
+portfolio/
+├── app/                    # App Router de Next.js
+│   ├── layout.tsx         # Layout principal avec métadonnées
+│   ├── page.tsx           # Page d'accueil
+│   ├── sitemap.xml        # Sitemap pour SEO
+│   └── robots.txt         # Instructions pour les crawlers
+├── components/            # Composants React
+│   ├── ui/               # Composants UI (Shadcn)
+│   ├── Header.tsx        # Navigation principale
+│   ├── Footer.tsx        # Pied de page
+│   ├── Hero.tsx          # Section héro
+│   ├── Projects.tsx      # Projets
+│   ├── Experience.tsx    # Expérience professionnelle
+│   ├── Education.tsx     # Formation
+│   ├── Certifications.tsx # Certifications
+│   ├── Recommandations.tsx # Recommandations
+│   └── Contact.tsx       # Contact
+├── public/               # Fichiers statiques
+│   ├── images/          # Images du portfolio
+│   ├── logo/            # Logos et icônes
+│   └── favicon.ico      # Favicon
+├── lib/                 # Utilitaires
+└── styles/             # Styles globaux
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🎨 Fonctionnalités
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- ✅ **Design responsive** - Compatible mobile, tablette et desktop
+- ✅ **Optimisé SEO** - Métadonnées complètes, sitemap, robots.txt
+- ✅ **Performance optimisée** - Images optimisées, lazy loading
+- ✅ **Animations fluides** - Transitions CSS et scroll smooth
+
+## 📊 SEO et Métadonnées
+
+Le site inclut :
+
+- Métadonnées Open Graph pour les réseaux sociaux
+- Twitter Cards pour un meilleur partage
+- Structured data (JSON-LD)
+- Sitemap XML automatique
+- Robots.txt optimisé
+
+## 🚀 Déploiement
+
+### GitHub Pages
+
+1. Configurez GitHub Pages dans les paramètres du repository
+2. Le déploiement se fait automatiquement via GitHub Actions
+
+### Hébergement personnalisé
+
+1. Exécutez `npm run build`
+2. Uploadez le contenu du dossier `out/` sur votre serveur
+
+## 🔧 Configuration
+
+### Variables d'environnement
+
+Créez un fichier `.env.local` pour les configurations spécifiques :
+
+```env
+NEXT_PUBLIC_SITE_URL=https://romainramanzin.fr
+```
+
+### Personnalisation
+
+- Modifiez les données dans chaque composant
+- Adaptez les couleurs dans `tailwind.config.ts`
+- Remplacez les images dans `public/images/`
+
+## 📄 Licence
+
+Ce projet est sous licence MIT.
+
+## 📞 Contact
+
+**Romain Ramanzin**
+
+- Portfolio : [https://romainramanzin.fr](https://romainramanzin.fr)
+- Email : romain.ramanzin@gmail.com
+- LinkedIn : [linkedin.com/in/romainrr](https://linkedin.com/in/romainrr)
+- GitHub : [github.com/RomainRamanzin](https://github.com/RomainRamanzin)
+
+---
+
+_Développé avec ❤️ par Romain Ramanzin_
