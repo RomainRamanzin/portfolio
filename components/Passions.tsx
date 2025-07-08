@@ -6,7 +6,7 @@ const passions = [
   {
     name: "Impression 3d",
     description: "Prototypage & création",
-    img: "./images/imprimante-3d.png",
+    img: "./images/imprimante-3d.webp",
   },
   {
     name: "Électronique",
@@ -16,7 +16,7 @@ const passions = [
   {
     name: "Robotique",
     description: "Automatisation & IA",
-    img: "./images/robot.jpg",
+    img: "./images/robot.webp",
   },
   {
     name: "Sim Racing",

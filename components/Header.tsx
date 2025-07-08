@@ -52,7 +52,7 @@ function Header() {
         <Link href="#" className="flex items-center gap-3 flex-shrink-0">
           <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-purple-500/20">
             <Image
-              src="./images/profile-pic.png"
+              src="./images/profile-pic.webp"
               alt="Avatar Romain Ramanzin"
               width={32}
               height={32}

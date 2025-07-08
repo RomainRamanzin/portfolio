@@ -107,7 +107,7 @@ function Hero() {
           <div className="relative z-10">
             <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-xl mx-auto">
               <Image
-                src="./images/profile-pic.png"
+                src="./images/profile-pic.webp"
                 alt="Photo de profil"
                 width={320}
                 height={320}
