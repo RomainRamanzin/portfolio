@@ -6,7 +6,7 @@ import { Badge } from "./ui/badge";
 const experiences = [
   {
     title: "Développeur Full Stack / Responsable technique - alternance",
-    company: "Pilow (MadenCo) - StartUp",
+    company: "MadenCo - StartUp",
     period: "2023 - 2025",
     location: "Cergy, France",
     logo: "./logo/pilow-logo.png",
@@ -30,6 +30,7 @@ const experiences = [
       "Ubuntu",
       "Figma",
       "Trello",
+      "Mobile",
     ],
   },
   {
