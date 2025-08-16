@@ -26,12 +26,12 @@ const experiences = [
       "JavaScript",
       "MySQL",
       "API REST",
+      "Mobile",
       "Git",
       "CI/CD",
       "Ubuntu",
       "Figma",
       "Trello",
-      "Mobile",
     ],
   },
   {
