@@ -13,6 +13,7 @@ const experiences = [
     description:
       "En tant que responsable technique, j’ai pris en charge l’ensemble des aspects techniques du site web et de son API, garantissant la stabilité, la scalabilité et l’évolution de la plateforme.",
     tasks: [
+      "Optimisation du SEO et du référencement naturel du site pour améliorer sa visibilité sur les moteurs de recherche.",
       "Conception et développement d’une API Symfony avec une base de données MySQL.",
       "Implémentation de nouvelles fonctionnalités et optimisation des performances.",
       "Déploiement et administration des serveurs (configuration, sécurité, monitoring).",
