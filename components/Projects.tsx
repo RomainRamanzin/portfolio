@@ -9,16 +9,57 @@ import {
 import { Button } from "./ui/button";
 import { Code, ExternalLink, Github } from "lucide-react";
 import { Badge } from "./ui/badge";
+import Link from "next/link";
 
 const projects = [
   {
-    title: "Application E-commerce",
+    title: "Modoow",
     description:
-      "Plateforme de vente en ligne complète avec panier, paiement et gestion des commandes",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/placeholder.svg?height=200&width=300",
-    link: "#",
-    github: "#",
+      "Modoow est une plateforme dédiée à la création et à la vente de cartes personnalisées, façon livre d'or, à partager en ligne. Les cartes sont proposées sous forme numérique ou imprimée.",
+    technologies: [
+      "Symfony",
+      "PHP",
+      "JavaScript",
+      "Google Tag Manager",
+      "MySQL",
+      "SEO",
+      "Mobile",
+      "hébergement",
+      "Serveurs",
+    ],
+    image: "./images/capture-modoow.webp",
+    link: "https://modoow.alwaysdata.net",
+    // github: "#",
+  },
+  {
+    title: "Portfolio personnel",
+    description:
+      "Portfolio personnel réalisé avec Next.js et Typescript, mettant l'accent sur un design moderne et une optimisation avancée du référencement pour une meilleure visibilité en ligne.",
+    technologies: [
+      "Next.js",
+      "Typescript",
+      "SEO",
+      "Référencement",
+      "Mobile",
+      "hébergement",
+    ],
+    image: "./images/portfolio-img.webp",
+    link: "https://romainramanzin.fr",
+    github: "https://github.com/RomainRamanzin/portfolio",
+  },
+  {
+    title: "Site vitrine | Organisme de formation",
+    description:
+      "Création d’un site vitrine moderne et responsive pour présenter l’offre de formation, faciliter la prise de contact et optimiser la visibilité en ligne.",
+    technologies: [
+      "WordPress",
+      "Symfony",
+      "Google Tag Manager",
+      "SEO",
+      "Mobile",
+    ],
+    image: "./images/4manet-mockup.webp",
+    link: "https://4manet.fr",
   },
 ];
 
@@ -74,18 +115,27 @@ function Projects() {
                 <div className="flex gap-2 mt-auto">
                   <Button
                     size="sm"
+                    asChild
                     className="flex-1 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white"
                   >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Voir
+                    <Link href={project.link} target="_blank">
+                      <ExternalLink className="w-4 h-4 mr-2" />
+                      Voir
+                    </Link>
                   </Button>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="border-slate-200 dark:border-slate-700"
-                  >
-                    <Github className="w-4 h-4" />
-                  </Button>
+                  {project.github && (
+                    <Button
+                      size="sm"
+                      asChild
+                      variant="outline"
+                      className="border-slate-200 dark:border-slate-700"
+                    >
+                      <Link href={project.github} target="_blank">
+                        Voir le code
+                        <Github className="w-4 h-4" />
+                      </Link>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

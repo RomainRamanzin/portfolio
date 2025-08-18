@@ -7,7 +7,7 @@ const recommendations = [
   {
     name: "Sandra Bédé",
     position: "Fondatrice",
-    company: "Pilow (MadenCo)",
+    company: "MadenCo",
     content:
       "Romain est un homme polyvalent, fiable et très ingénieux. Il a su porter seul le plus gros projet de développement de la société que j’ai fondée il y a 2 ans. Il est très rigoureux et sait faire preuve d’initiatives. J’espère avoir un jour la chance de retravailler à ses côtés !",
     avatar: "./images/sandra-bede.webp",
