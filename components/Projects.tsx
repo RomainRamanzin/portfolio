@@ -28,7 +28,7 @@ const projects = [
       "Serveurs",
     ],
     image: "./images/capture-modoow.webp",
-    link: "https://modoow.alwaysdata.net",
+    // link: "https://modoow.alwaysdata.net",
     // github: "#",
   },
   {
@@ -113,16 +113,18 @@ function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2 mt-auto">
-                  <Button
-                    size="sm"
-                    asChild
-                    className="flex-1 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white"
-                  >
-                    <Link href={project.link} target="_blank">
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Voir
-                    </Link>
-                  </Button>
+                  {project.link && (
+                    <Button
+                      size="sm"
+                      asChild
+                      className="flex-1 bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 text-white"
+                    >
+                      <Link href={project.link} target="_blank">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        Voir
+                      </Link>
+                    </Button>
+                  )}
                   {project.github && (
                     <Button
                       size="sm"
