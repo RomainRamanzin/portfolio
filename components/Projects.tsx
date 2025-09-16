@@ -13,6 +13,22 @@ import Link from "next/link";
 
 const projects = [
   {
+    title: "Aurel Automobile",
+    description:
+      "Aurel Automobile est un site vitrine dédié à la présentation d’une entreprise spécialisée en électronique automobile. Le site met en avant ses services ainsi que ses différentes réalisations.",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "MySQL",
+      "SEO",
+      "hébergement",
+      "Serveurs",
+    ],
+    image: "./images/aurel-website-thumbnail.webp",
+    link: "https://aurel-automobile.vercel.app",
+    // github: "#",
+  },
+  {
     title: "Modoow",
     description:
       "Modoow est une plateforme dédiée à la création et à la vente de cartes personnalisées, façon livre d'or, à partager en ligne. Les cartes sont proposées sous forme numérique ou imprimée.",
@@ -47,20 +63,20 @@ const projects = [
     link: "https://romainramanzin.fr",
     github: "https://github.com/RomainRamanzin/portfolio",
   },
-  {
-    title: "Site vitrine | Organisme de formation",
-    description:
-      "Création d’un site vitrine moderne et responsive pour présenter l’offre de formation, faciliter la prise de contact et optimiser la visibilité en ligne.",
-    technologies: [
-      "WordPress",
-      "Symfony",
-      "Google Tag Manager",
-      "SEO",
-      "Mobile",
-    ],
-    image: "./images/4manet-mockup.webp",
-    link: "https://4manet.fr",
-  },
+  // {
+  //   title: "Site vitrine | Organisme de formation",
+  //   description:
+  //     "Création d’un site vitrine moderne et responsive pour présenter l’offre de formation, faciliter la prise de contact et optimiser la visibilité en ligne.",
+  //   technologies: [
+  //     "WordPress",
+  //     "Symfony",
+  //     "Google Tag Manager",
+  //     "SEO",
+  //     "Mobile",
+  //   ],
+  //   image: "./images/4manet-mockup.webp",
+  //   link: "https://4manet.fr",
+  // },
 ];
 
 function Projects() {
