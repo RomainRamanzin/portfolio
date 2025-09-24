@@ -69,7 +69,7 @@ function Hero() {
               size="lg"
               onClick={() =>
                 window.open(
-                  "./documents/CV_2025-07-07_Romain_Ramanzin.pdf",
+                  "./documents/CV_2025-09-22_Romain_Ramanzin.pdf",
                   "_blank"
                 )
               }
