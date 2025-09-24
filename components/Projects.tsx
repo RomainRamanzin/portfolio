@@ -25,7 +25,7 @@ const projects = [
       "Serveurs",
     ],
     image: "./images/aurel-website-thumbnail.webp",
-    link: "https://aurel-automobile.vercel.app",
+    // link: "https://aurel-automobile.vercel.app",
     // github: "#",
   },
   {
