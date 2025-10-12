@@ -50,7 +50,7 @@ export function PrinterName() {
   const printerPos = getPrinterPosition();
 
   return (
-    <div className="relative w-full max-w-md mx-auto h-40 overflow-hidden">
+    <div className="relative w-full max-w-md mx-auto h-48 overflow-hidden">
       {/* Tête d'imprimante */}
       {showPrinter && (
         <div
