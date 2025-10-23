@@ -24,7 +24,7 @@ Ce portfolio présente :
 - **UI Components :** Shadcn/ui
 - **Icônes :** Lucide React
 - **Polices :** Space Grotesk (Google Fonts)
-- **Déploiement :** GitHub Pages
+- **Déploiement :** Vercel
 
 ## 📦 Installation
 
@@ -128,10 +128,10 @@ Le site inclut :
 
 ## 🚀 Déploiement
 
-### GitHub Pages
+### Déploiement avec Vercel
 
-1. Configurez GitHub Pages dans les paramètres du repository
-2. Le déploiement se fait automatiquement via GitHub Actions
+- Connectez votre repository à Vercel : importez le projet depuis votre compte GitHub sur vercel.com → New Project → Import.
+- Déploiements automatiques : les pushes sur la branche principale et les PRs déclenchent des déploiements (production & previews).
 
 ### Hébergement personnalisé
 
