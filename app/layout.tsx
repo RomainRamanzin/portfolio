@@ -90,8 +90,8 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           {children}
+          <Analytics />
         </ThemeProvider>
-        <Analytics />
       </body>
     </html>
   );
