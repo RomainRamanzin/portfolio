@@ -5,6 +5,35 @@ import { Badge } from "./ui/badge";
 
 const experiences = [
   {
+    title: "Développeur PHP",
+    company: "CY Cergy Paris Université",
+    period: "2025 - Présent",
+    location: "Cergy, France",
+    logo: "./logo/cyu.webp",
+    description:
+      "Développeur PHP au sein de la DNUM (Direction du Numérique), dans le service SOAP (Services Outils Applicatifs et Projets). J’interviens sur la gestion des données du système d’information, la gestion des identités et des accès, ainsi que sur le développement et la modernisation d’outils internes.",
+    tasks: [
+      "Gestion et synchronisation des données entre les différents systèmes de l’université (applications métiers, SI internes, annuaires).",
+      "Conception et maintenance de flux de synchronisation (automatisation, fiabilité et cohérence des données).",
+      "Administration et exploitation de l’annuaire LDAP (gestion des utilisateurs, groupes, droits d’accès).",
+      "Mise en œuvre des règles de gestion des identités et des accès (IAM).",
+      "Développement et maintenance d’outils internes en PHP pour les différents services de l’université.",
+      "Modernisation d’applications existantes (refonte technique, amélioration des performances et de la maintenabilité).",
+      "Analyse des besoins métiers et conception de solutions techniques adaptées.",
+      "Fiabilisation et amélioration de la qualité des données au sein du SI.",
+    ],
+    techno: [
+      "PHP",
+      "Symfony",
+      "MySQL",
+      "LDAP",
+      "API REST",
+      "CI/CD",
+      "Git",
+      "Jira"
+    ],
+  },
+  {
     title: "Développeur Full Stack / Responsable technique - alternance",
     company: "MadenCo - StartUp",
     period: "2023 - 2025",
